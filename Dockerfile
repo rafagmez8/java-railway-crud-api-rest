@@ -8,7 +8,7 @@ WORKDIR /app
 # Cambiar permisos a archivos maven y compilar la aplicación maven (.jar)
 RUN chmod +x mvnw
 #RUN ./mvnw package -DskipTests
-RUN mv -f ./target/*.jar app.jar
+RUN mv -f target/*.jar app.jar
 
 # Establece la imagen a ejecutar
 FROM eclipse-temurin:21-jre
